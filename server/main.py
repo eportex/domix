@@ -1,8 +1,8 @@
 import datetime
 from flask import Flask
 app = Flask(__name__)
+x = datetime.datetime.now()
 
 @app.route("/")
 def hello():
-    x = datetime.datetime.now()
     return x
